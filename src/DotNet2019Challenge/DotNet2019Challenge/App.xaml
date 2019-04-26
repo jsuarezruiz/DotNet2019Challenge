@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:converters="clr-namespace:DotNet2019Challenge.Converters"
+             x:Class="DotNet2019Challenge.App">
+    <Application.Resources>
+        <ResourceDictionary>
+
+            <!-- GENERAL COLORS -->
+            <Color x:Key="WhiteColor">#FFFFFF</Color>
+            <Color x:Key="BlackColor">#000000</Color>
+
+            <!-- THEME COLORS -->
+            <Color x:Key="AccentColor">#F5C210</Color>
+            <Color x:Key="BackgroundColor">#1E2634</Color>
+            <Color x:Key="DarkBackgroundColor">#151C25</Color>
+            <Color x:Key="MenuBackgroundColor">#44545C</Color>
+
+            <!-- CONVERTERS -->
+            <converters:InverseBoolConverter x:Key="InverseBoolConverter" />
+            <converters:MovieImageConverter x:Key="MovieImageConverter" />
+            
+            <!-- STYLES -->
+            <Style x:Key="EntryStyle1"
+                   TargetType="{x:Type Entry}">
+                <Setter Property="TextColor"
+                        Value="{StaticResource WhiteColor}" />
+                <Setter Property="PlaceholderColor"
+                        Value="{StaticResource WhiteColor}" />
+                <Setter Property="HorizontalOptions"
+                        Value="FillAndExpand" />
+                <Setter Property="FontAttributes"
+                        Value="Bold" />
+                <Setter Property="Opacity"
+                        Value="0.6" />
+                <Style.Triggers>
+                    <Trigger TargetType="Entry"
+                             Property="IsFocused" 
+                             Value="True">
+                        <Setter Property="Opacity" Value="1" />
+                    </Trigger>
+                </Style.Triggers>
+            </Style>
+
+            <Style x:Key="EntryStyle2"
+                   TargetType="{x:Type Entry}">
+                <Setter Property="TextColor"
+                        Value="{StaticResource WhiteColor}" />
+                <Setter Property="PlaceholderColor"
+                        Value="{StaticResource WhiteColor}" />
+                <Setter Property="HorizontalOptions"
+                        Value="FillAndExpand" />
+                <Setter Property="FontAttributes"
+                        Value="Bold" />
+                <Setter Property="Opacity"
+                        Value="0.6" />
+                <Style.Triggers>
+                    <Trigger TargetType="Entry"
+                             Property="IsFocused" 
+                             Value="True">
+                        <Setter Property="Opacity" Value="1" />
+                    </Trigger>
+                </Style.Triggers>
+            </Style>
+
+            <Style x:Key="EntryStyle3"
+                   TargetType="{x:Type Entry}">
+                <Setter Property="TextColor"
+                        Value="{StaticResource WhiteColor}" />
+                <Setter Property="PlaceholderColor"
+                        Value="{StaticResource WhiteColor}" />
+                <Setter Property="HorizontalOptions"
+                        Value="FillAndExpand" />
+                <Setter Property="FontAttributes"
+                        Value="Bold" />
+                <Setter Property="Opacity"
+                        Value="0.6" />
+                <Style.Triggers>
+                    <Trigger TargetType="Entry"
+                             Property="IsFocused" 
+                             Value="True">
+                        <Setter Property="Opacity" Value="1" />
+                    </Trigger>
+                </Style.Triggers>
+            </Style>
+
+            <Style x:Key="EntryStyle4"
+                   TargetType="{x:Type Entry}">
+                <Setter Property="TextColor"
+                        Value="{StaticResource WhiteColor}" />
+                <Setter Property="PlaceholderColor"
+                        Value="{StaticResource WhiteColor}" />
+                <Setter Property="HorizontalOptions"
+                        Value="FillAndExpand" />
+                <Setter Property="FontAttributes"
+                        Value="Bold" />
+                <Setter Property="Opacity"
+                        Value="0.6" />
+                <Style.Triggers>
+                    <Trigger TargetType="Entry"
+                             Property="IsFocused" 
+                             Value="True">
+                        <Setter Property="Opacity" Value="1" />
+                    </Trigger>
+                </Style.Triggers>
+            </Style>
+
+            <Style x:Key="EntryStyle5"
+                   TargetType="{x:Type Entry}">
+                <Setter Property="TextColor"
+                        Value="{StaticResource WhiteColor}" />
+                <Setter Property="PlaceholderColor"
+                        Value="{StaticResource WhiteColor}" />
+                <Setter Property="HorizontalOptions"
+                        Value="FillAndExpand" />
+                <Setter Property="FontAttributes"
+                        Value="Bold" />
+                <Setter Property="Opacity"
+                        Value="0.6" />
+                <Style.Triggers>
+                    <Trigger TargetType="Entry"
+                             Property="IsFocused" 
+                             Value="True">
+                        <Setter Property="Opacity" Value="1" />
+                    </Trigger>
+                </Style.Triggers>
+            </Style>
+            
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
