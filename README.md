@@ -22,6 +22,8 @@ Sin embargo, cuenta con más de una docena de mejoras sencillas pero que sumadas
 
 El reto es sencillo. Encuentra al menos 3 de las posibles mejoras de rendimiento y modifica el ejemplo abriendo una nueva Pull Request en este repositorio.
 
+**NOTA:** _Se han añadido algunos problemas adrede. A pesar de usar MVVM y algunas buenas prácticas, NO tomes este ejemplo como referencia._
+
 ## El premio
 
 Una **entrada** para la DotNet 2019!.
@@ -34,7 +36,7 @@ Tan sencillo como:
 * Añade 3 cambios que impacten en el rendimiento.
 * Envía una PR con los cambios.
 
-Tienes hasta el 19 de Mayo para participar. El ganador será el primero que envíe una PR válida (cuente con 3 mejoras de rendimiento).
+Tienes hasta el **19 de Mayo** para participar. El ganador será el primero que envíe una PR válida (cuente con 3 mejoras de rendimiento).
 
 Sencillo, ¿verdad?.
 
