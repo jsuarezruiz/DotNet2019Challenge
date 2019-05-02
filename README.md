@@ -41,3 +41,23 @@ Tienes hasta el **19 de Mayo** para participar. El ganador será el primero que 
 Sencillo, ¿verdad?.
 
 #### Espero tu participación!
+
+## Ganador y la solución al reto
+
+Tras varias PRs, tenemos ya ganador: **[Miguel Ángel Martín Hernández](https://github.com/MookieFumi)**
+
+Enhorabuena!
+
+Con el reto concluido, es momento de indicar todas las posibles mejoras:
+* La **versión de Xamarin.Forms** es antigua. Hemos recibido varias mejoras en rendimiento (Fast Renderers, etc), por lo que es recomendable actualizar.
+* En el arranque de la App tenemos varias **dependencias** que NO usamos (SkiaSharp, FFImageLoading, etc.). Es recomendable no contar con dependencias innecesarias.
+* No se usa **XAMLC** (Compilación de XAML). La mejora es considerable y solo necesita una única línea.
+* **Bindings**. Tenemos Bindings con errores y/o innecesarios. Como regla general, evitar Bindings innecesarios y errores.
+* **Layouts**. Hay Layouts innecesarios y otros que podríamos cambiar para conseguir el mismo resultado con un mejor rendimiento.
+* **Controles**. Crear un HorizontalList personalizado teniendo BindableLayouts es innecesario. Teniendo un número no determinado de elementos en cada listado, usar **CollectionView** es una mejora.
+* **Imágenes**. Fuente habitual de mejoras en rendimiento. Usar FFImageLoading y GlideX es una mejora considerable.
+* **Recursos**. Hay estilos que no se usan en App.xaml.cs y en algunos casos podemos reutilizar y optimizar más. 
+* **HttpClient**. Creamos una instancia cada vez que hacemos una petición. Reutilizar la misma instancia es mucho más eficiente.
+* **Otros**. Hay muchas otros mini-cambios que afectan al rendimiento. Por ejemplo: Uso de Stream en lugar de obtener cadenas al tratar los datos de las peticiones Http, etc.
+
+De todos estos puntos (y otros), veremos detalles, datos y gráficas en la charla de la **DotNet 2019**, espero veros allí!.
